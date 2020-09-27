@@ -16,8 +16,8 @@ Then I should see the username as "<name>"
 
 Examples:
 |user					|pwd						|name				|
-|Admin				|admin123				|Welcome Britney|
-|linda.anderson|linda.anderson|Welcome Britney|
+|Admin				|admin123				|Welcome Linda|
+|linda.anderson|linda.anderson|Welcome Linda|
 
 @negative
 Scenario: Login with Negative Data

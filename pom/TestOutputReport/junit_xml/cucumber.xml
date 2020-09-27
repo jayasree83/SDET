@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="64.206">
-<testcase classname="Login features" name="Login with different user" time="26.025">
-<system-out><![CDATA[Given I am able to navigate onto login page.................................passed
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="45.421">
+<testcase classname="Login features" name="Login with different user" time="18.667">
+<failure message="expected:&lt;Welcome [Linda]&gt; but was:&lt;Welcome [Britney]&gt;" type="junit.framework.ComparisonFailure"><![CDATA[Given I am able to navigate onto login page.................................passed
 When I enter the username as "Admin"........................................passed
 And I enter the password as "admin123"......................................passed
 And I click on the login button.............................................passed
-Then I should see the username as "Welcome Britney".........................passed
-]]></system-out>
+Then I should see the username as "Welcome Britney".........................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<Welcome [Linda]> but was:<Welcome [Britney]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinition.Steps.i_should_see_the_username_as(Steps.java:57)
+	at ✽.I should see the username as "Welcome Britney"(file:///C:/Users/jayasrp2/git/gitBDD/pom/src/test/resources/Feature/Login.feature:15)
+]]></failure>
 </testcase>
-<testcase classname="Login features" name="Login with different user 2" time="22.586">
-<system-out><![CDATA[Given I am able to navigate onto login page.................................passed
+<testcase classname="Login features" name="Login with different user 2" time="15.466">
+<failure message="expected:&lt;Welcome [Linda]&gt; but was:&lt;Welcome [Britney]&gt;" type="junit.framework.ComparisonFailure"><![CDATA[Given I am able to navigate onto login page.................................passed
 When I enter the username as "linda.anderson"...............................passed
 And I enter the password as "linda.anderson"................................passed
 And I click on the login button.............................................passed
-Then I should see the username as "Welcome Britney".........................passed
-]]></system-out>
+Then I should see the username as "Welcome Britney".........................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<Welcome [Linda]> but was:<Welcome [Britney]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at stepDefinition.Steps.i_should_see_the_username_as(Steps.java:57)
+	at ✽.I should see the username as "Welcome Britney"(file:///C:/Users/jayasrp2/git/gitBDD/pom/src/test/resources/Feature/Login.feature:15)
+]]></failure>
 </testcase>
-<testcase classname="Login features" name="Login with Negative Data" time="14.828">
+<testcase classname="Login features" name="Login with Negative Data" time="10.959">
 <system-out><![CDATA[Given I am able to navigate onto login page.................................passed
 Given I am able to navigate onto login page.................................passed
 When I enter the username as "Jayasree".....................................passed
